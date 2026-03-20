@@ -48,3 +48,5 @@ elif (idade >= 13):
 # else é usado para executar um bloco de código se todas as condições anteriores forem falsas
 else:
     print("Você é uma criança.")
+
+    #ass: jefin#
