@@ -1,4 +1,4 @@
-estadoCivil = input("Digite qual o seu estado civil, sendo: Solteiro, Casado, Divorciado, Viúvo ou Outros: " "S, C, D, V ou O: ")
+estadoCivil = input("Digite qual o seu estado civil, sendo: Solteiro, Casado, Divorciado, Viúvo ou Outros: " "S, C, D, V ou O: ").lower()
 
 if (estadoCivil == "S"):
     print("Você é solteiro")
