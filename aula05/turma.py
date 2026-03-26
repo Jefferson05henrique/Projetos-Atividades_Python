@@ -5,7 +5,7 @@ total_alunos = 0
 while turmas > 0:
     alunos = int(input("Conte o número de alunos na turma: "))
 
-    if alunos > 40:
+    if alunos >= 40:
         print("Turma grande, reconte")
     else:
         total_alunos += alunos # soma o número de alunos da turma atual ao total de alunos#
