@@ -1,4 +1,4 @@
-alunos = 3
+alunos = 30
 idade = []
 altura = []
 somaAltura = 0
@@ -24,7 +24,7 @@ while i < alunos:
         aluno_media = aluno_media + 1
     i += 1
 
-print(f"Alunos dentro da média com mais de treze anos: {aluno_media}")
+print(f"Alunos inferiores a média com mais de treze anos: {aluno_media}")
 print(f"A média de altura da turma é: {mediaAltura}")
 
 

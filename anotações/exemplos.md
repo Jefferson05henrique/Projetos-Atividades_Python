@@ -256,3 +256,70 @@ Other
                           human-readable comment string (# will be prepended as needed)
     --[no-]fixed-value    use string equality when comparing values to value pattern
     --[no-]includes       respect include directives on lookup
+
+    ATIVIDADE COM LISTA, MUITO INTERRESSANTE ALIÁS:
+
+    # quantidade de alunos que serão analisados
+alunos = 30
+
+# listas para armazenar as idades e alturas dos alunos
+idade = []
+altura = []
+
+# variável para somar todas as alturas
+somaAltura = 0
+
+# contador para controlar o loop de entrada de dados
+contador = 0
+
+# loop que irá rodar enquanto não coletarmos os dados de todos os alunos
+while contador < alunos:
+
+    # pede a idade do aluno
+    idadeAluno = int(input("Digite usa idade: "))
+
+    # pede a altura do aluno
+    alturaAluno = float(input("Digite sua altura: "))
+
+    # adiciona a idade digitada dentro da lista idade
+    idade.append(idadeAluno)
+
+    # adiciona a altura digitada dentro da lista altura
+    altura.append(alturaAluno)
+
+    # aumenta o contador para ir para o próximo aluno
+    contador += 1
+
+    # soma todas as alturas digitadas
+    somaAltura = somaAltura + alturaAluno
+
+
+# calcula a média de altura da turma
+mediaAltura = somaAltura / alunos
+
+
+# variável que vai percorrer as listas
+i = 0
+
+# contador de alunos que têm mais de 13 anos e altura abaixo da média
+aluno_media = 0
+
+
+# percorre todas as posições das listas
+while i < alunos:
+
+    # verifica se o aluno tem mais de 13 anos E altura menor que a média
+    if idade[i] > 13 and altura[i] < mediaAltura:
+
+        # se atender à condição, soma 1 no contador
+        aluno_media = aluno_media + 1
+
+    # passa para o próximo aluno da lista
+    i += 1
+
+
+# mostra quantos alunos atendem à condição do exercício
+print(f"Alunos inferiores a média com mais de treze anos: {aluno_media}")
+
+# mostra a média de altura da turma
+print(f"A média de altura da turma é: {mediaAltura}")
