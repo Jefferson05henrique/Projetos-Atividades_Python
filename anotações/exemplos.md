@@ -323,3 +323,93 @@ print(f"Alunos inferiores a média com mais de treze anos: {aluno_media}")
 
 # mostra a média de altura da turma
 print(f"A média de altura da turma é: {mediaAltura}")
+
+EXERCICIO:
+
+# Definindo o preço do litro de cada combustível
+Preco_alcool = 3.89
+Preco_gasolina = 5.50
+
+# Pergunta ao usuário qual combustível ele quer
+# .lower() transforma a resposta em minúscula (A vira a / G vira g)
+tipo_cliente = input("Você quer qual combustível: \n\
+                     G-gasolina ou A-álcool ").lower()
+
+# Pergunta quantos litros o cliente quer abastecer
+# Dependendo da quantidade existe um desconto diferente
+litros = int(input("até 20 litros você consegue um desconto de: \n\
+                   Alcool 3% e 4% na gasolina \n\
+                   acima de 20 litros você consegue um desconto de: \n\
+                   Alcool 5% e gasolina 6% "))
+
+# Cálculo do valor com desconto para álcool até 20 litros (3%)
+desconto_alcool = (Preco_alcool * litros) * (1 - 0.03)
+
+# Cálculo do valor com desconto para álcool acima de 20 litros (5%)
+alcool_acima = (Preco_alcool * litros) * (1 - 0.05)
+
+# Cálculo do valor com desconto para gasolina até 20 litros (4%)
+desconto_gasolina = (Preco_gasolina * litros) * (1 - 0.04)
+
+# Cálculo do valor com desconto para gasolina acima de 20 litros (6%)
+gasolina_acima = (Preco_gasolina * litros) * (1 - 0.06)
+
+# Verifica se o cliente escolheu álcool e se a quantidade é até 20 litros
+if (tipo_cliente == "a") and (litros <= 20):
+    print(f"O valor é {desconto_alcool:.2f}")
+
+# Verifica se o cliente escolheu álcool e se a quantidade é maior que 20 litros
+elif (tipo_cliente == "a") and (litros > 20):
+    print(f"o valor é {alcool_acima:.2f}")
+
+# Verifica se o cliente escolheu gasolina e se a quantidade é até 20 litros
+elif (tipo_cliente == "g") and (litros <= 20):
+    print(f"o valor é {desconto_gasolina:.2f}")
+
+# Verifica se o cliente escolheu gasolina e se a quantidade é maior que 20 litros
+elif (tipo_cliente == "g") and (litros > 20):
+    print(f"o valor é {alcool_acima:.2f}")  # aqui deveria usar gasolina_acima
+
+# Caso o usuário digite algo diferente de A ou G
+else:
+    print(f"não temos esse combustível.")
+
+
+UMA FORMA MAIS ORGANIZADA: 
+
+# Preço por litro
+preco_alcool = 3.89
+preco_gasolina = 5.50
+
+# Pergunta qual combustível o cliente deseja
+tipo_cliente = input("Escolha o combustível (G - Gasolina / A - Álcool): ").lower()
+
+# Pergunta a quantidade de litros
+litros = float(input("Digite a quantidade de litros: "))
+
+# Verificação do tipo de combustível
+if tipo_cliente == "a":
+
+    valor = preco_alcool * litros  # calcula valor sem desconto
+
+    # desconto dependendo da quantidade
+    if litros <= 20:
+        valor = valor * (1 - 0.03)  # 3% de desconto
+    else:
+        valor = valor * (1 - 0.05)  # 5% de desconto
+
+    print(f"Total a pagar: R$ {valor:.2f}")
+
+elif tipo_cliente == "g":
+
+    valor = preco_gasolina * litros  # calcula valor sem desconto
+
+    if litros <= 20:
+        valor = valor * (1 - 0.04)  # 4% de desconto
+    else:
+        valor = valor * (1 - 0.06)  # 6% de desconto
+
+    print(f"Total a pagar: R$ {valor:.2f}")
+
+else:
+    print("Tipo de combustível inválido.")

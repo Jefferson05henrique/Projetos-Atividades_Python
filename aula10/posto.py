@@ -21,7 +21,7 @@ elif (tipo_cliente == "a") and (litros > 20):
 elif (tipo_cliente == "g") and (litros <= 20):
     print(f"o valor é {desconto_gasolina:.2f}")
 elif (tipo_cliente == "g") and (litros > 20):
-    print(f"o valor é {alcool_acima:.2f}")
+    print(f"o valor é {gasolina_acima:.2f}")
 else:
     print(f"não temos esse combustível.")
 
