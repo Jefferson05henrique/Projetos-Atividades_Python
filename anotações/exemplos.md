@@ -413,3 +413,11 @@ elif tipo_cliente == "g":
 
 else:
     print("Tipo de combustível inválido.")
+
+
+
+    INSTALAÇÃO
+
+    python -m venv venv
+    .\venv\scripts\activate
+    pip install numpy pandas openpxl
