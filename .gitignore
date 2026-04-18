@@ -1,0 +1,17 @@
+# ambiente virtual
+venv/
+aula15/venv/
+
+# python
+__pycache__/
+*.pyc
+
+# jupyter
+.ipynb_checkpoints/
+
+# sistema
+.DS_Store
+Thumbs.db
+
+# ambiente
+.env
