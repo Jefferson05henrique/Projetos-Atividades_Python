@@ -421,3 +421,12 @@ else:
     python -m venv venv
     .\venv\scripts\activate
     pip install numpy pandas openpxl
+
+
+
+    python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+
+pip install -r requirements.txt
+
