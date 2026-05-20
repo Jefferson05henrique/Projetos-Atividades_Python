@@ -75,3 +75,55 @@ ON f.id_cliente = c.id_cliente
 GROUP BY c.cidade
 
 ORDER BY total_compras DESC;
+
+-- 5 produtos mais vendidos
+-- limit = limita ate o quinto
+
+SELECT 
+    p.nome_produto,
+    SUM(f.quantidade) AS total_vendido
+
+FROM fato_vendas f
+
+JOIN dim_produto p
+ON f.id_produto = p.id_produto
+
+GROUP BY p.nome_produto
+
+ORDER BY total_vendido DESC
+
+LIMIT 5;
+
+-- ticket médio das vendas
+-- avg calcula média
+
+SELECT 
+    AVG(valor_total) AS ticket_medio
+FROM fato_vendas;
+
+-- total de clientes
+-- count() = conta registros
+-- count(*) = conta tudo
+
+SELECT 
+    COUNT(*) AS total_clientes
+FROM dim_cliente;
+
+-- clientes que gastaram mais de 3000
+-- having = filtra grupos após agregação
+-- where = filtra linhas / having = filtra agrupamentos
+
+SELECT 
+    c.nome_cliente,
+    SUM(f.valor_total) AS total_gasto
+
+FROM fato_vendas f
+
+JOIN dim_cliente c
+ON f.id_cliente = c.id_cliente
+
+GROUP BY c.nome_cliente
+
+HAVING total_gasto > 3000
+
+ORDER BY total_gasto DESC;
