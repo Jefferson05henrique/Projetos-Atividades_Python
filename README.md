@@ -2,121 +2,151 @@
 
 ## Visão geral
 
-Este repositório reúne exercícios e projetos de Python organizados por aulas, anotações e desafios de análise de dados. Há também scripts SQL e arquivos de Power BI usados em projetos de banco de dados e visualização.
+Este repositório reúne exercícios e projetos de Python organizados por aulas, anotações e desafios de análise de dados.
+Também contém notebooks, dados em CSV/XLSX, scripts SQL e arquivos Power BI usados em atividades e projetos.
 
 ## Estrutura principal
 
-- `anotações/`: notas e exemplos em Markdown usados como referência de estudo.
-- `aula01/` a `aula17/`: exercícios de programação em Python organizados por aula.
-- `AULA09/`: exercícios específicos de listas e altura de alunos.
-- `DESAFIO/`: desafios de análise de dados com Jupyter Notebooks e planilhas de vinho.
-- `Projeto-DataWarehouse/`: scripts SQL para criação de tabelas e carregamento de dados em um data warehouse.
-- `BancoDeDadosJefferson.sql`, `concessionaria.sql`: arquivos SQL independentes para bases de dados.
-- `requirements.txt`: dependências Python do projeto.
-- `Projeto_vinho.pbix`, `ANALISE.pbix`: relatórios de Power BI.
-- `venv/`: ambiente virtual Python local (gerenciado pelo `.gitignore`).
+- `anotações/`: notas em Markdown e exemplos de estudo.
+- `aula01/` a `aula17/`: exercícios e estudos de Python organizados por aula.
+- `AULA09/`: exercícios de listas e altura de alunos.
+- `DESAFIO/`: desafio de análise de dados com notebooks e planilhas de vinho.
+- `Projeto-DataWarehouse/`: dados e scripts de ETL/SQL para um data warehouse.
+- Arquivos SQL independentes: `BancoDeDadosJefferson.sql`, `concessionaria.sql`.
+- Relatórios Power BI: `ANALISE.pbix`, `Projeto_vinho.pbix`.
+- `requirements.txt`: dependências Python.
 
-## Detalhes por pasta
+## Conteúdo por pasta
 
 ### `anotações/`
-- `exemplos.md`: notas e exemplos em Markdown, provavelmente usadas para estudo ou apoio durante as aulas.
+- `exemplos.md`: notas e exemplos usados como material de apoio.
 
 ### `aula01/`
-- `hello.py`: exemplo básico de Python para imprimir uma mensagem na tela.
+- `hello.py`: exemplo básico para imprimir texto em Python.
 
 ### `aula02/`
-- `calculadora.py`: calculadora simples entre valores digitados.
-- `dicionario.py`: exemplo de uso de dicionários em Python.
-- `estadoCivil.py`: validação ou processamento de estado civil.
-- `idade.py`: cálculo ou verificação de idade.
-- `media.py`: cálculo de média entre valores.
-- `menor.py`: determina o menor valor entre entradas.
-- `par-impar.py`: checa se um número é par ou ímpar.
+- `calculadora.py`
+- `dicionario.py`
+- `estadoCivil.py`
+- `idade.py`
+- `media.py`
+- `menor.py`
+- `par-impar.py`
 
 ### `aula03/`
-- `vogais.py`: identifica vogais em texto ou entrada do usuário.
-- `extensao.ipynb`: notebook Jupyter com conteúdo estendido ou experimentos da aula.
+- `vogais.py`
+- `extensao.ipynb`
 
 ### `aula04/`
-- `and_empresa.py`: exemplo com operador `and` em contexto de empresa.
-- `and_login.py`: validação de login usando operador `and`.
-- `and_or.py`: combina operadores `and` e `or`.
-- `or_aluno.py`: exemplo com operador `or` em contexto de aluno.
-- `or_autorizacao.py`: lógica de autorização usando `or`.
+- `and_empresa.py`
+- `and_login.py`
+- `and_or.py`
+- `or_aluno.py`
+- `or_autorizacao.py`
 
 ### `aula05/`
-- `algoritmo.py`: exemplo de algoritmo básico em Python.
-- `aritmetica.py`: operações aritméticas simples.
-- `digitados.py`: processa valores digitados pelo usuário.
-- `idades.py`: cálculo de idade ou lista de idades.
-- `senha.py`: validação simples de senha.
-- `signo.py`: determina signo a partir de dados de nascimento.
-- `turma.py`: lógica relacionada a turma ou alunos.
-- `while.py`: exercício com laço `while`.
-- `zero_dez.py`: exercício com valores de 0 a 10.
+- `algoritmo.py`
+- `aritmetica.py`
+- `digitados.py`
+- `idades.py`
+- `senha.py`
+- `signo.py`
+- `turma.py`
+- `while.py`
+- `zero_dez.py`
 
 ### `aula06/`
-- `convite.py`: exemplo de convite ou mensagem condicional.
+- `convite.py`
 
 ### `aula07/`
-- `forUm.py`: loop `for` passando por uma única sequência.
-- `forPar.py`: laço `for` para números pares.
-- `forMedia.py`: usa `for` para calcular média.
+- `forMedia.py`
+- `forPar.py`
+- `forUm.py`
 
 ### `aula08/`
-- `fibonacci.py`: gera sequência de Fibonacci.
-- `login.py`: validação de login simples.
+- `fibonacci.py`
+- `login.py`
 
 ### `AULA09/`
-- `listas.py`: exercícios com listas em Python.
-- `alturaAlunos.py`: cálculo ou análise de alturas de alunos.
+- `alturaAlunos.py`
+- `listas.py`
 
 ### `aula10/`
-- `posto.py`: exemplo de posto de gasolina ou fluxo de decisão.
-- `revisão.py`: revisão de conceitos.
-- `revisao2.py`: segundo script de revisão.
+- `posto.py`
+- `revisão.py`
+- `revisao2.py`
 
 ### `aula11/`
-- `exercicio.py`: exercício geral da aula 11.
+- `exercicio.py`
 
 ### `aula12/`
-- `dicionario.ipynb`: notebook sobre dicionários em Python.
-- `exercicios.ipynb`: conjunto de exercícios da aula.
-- `tuplas.ipynb`: notebook sobre tuplas.
-- `desafio.ipynb`: desafio de sala de aula com Python.
+- `desafio.ipynb`
+- `dicionario.ipynb`
+- `exercicios.ipynb`
+- `tuplas.ipynb`
 
 ### `aula13/`
-- `funcoes.ipynb`: notebook explicando funções em Python.
-- `atividades.ipynb`: atividades práticas sobre funções.
+- `atividades.ipynb`
+- `funcoes.ipynb`
 
 ### `aula14/`
-- `atividade.ipynb`: notebook com exercício da aula.
-- `atividade07.ipynb`: atividade específica 07.
-- `atividade08.ipynb`: atividade específica 08.
-- `wine.csv`: conjunto de dados de vinho para análise.
+- `atividade.ipynb`
+- `atividade07.ipynb`
+- `atividade08.ipynb`
+- `wine.csv`
 
 ### `aula15/`
-- `atividade.ipynb`: notebook da aula 15 usando dados de vinho.
-- `vinhos_exercicio.xlsx`: planilha de dados de vinho para exercícios.
+- `atividade.ipynb`
+- `vinhos_exercicio.xlsx`
 
 ### `aula16/`
-- `atividade11.ipynb`: notebook da aula 16, atividade 11.
-- `correcao.ipynb`: correção de exercícios.
-- `estatistica.ipynb`: notebook com estatística aplicada.
-- `vinhos.xlsx`: dados de vinho em Excel.
-- `vinhos_tratamento.xlsx`: versão tratada desses dados.
+- `atividade11.ipynb`
+- `correcao.ipynb`
+- `estatistica.ipynb`
+- `vinhos.xlsx`
+- `vinhos_tratamento.xlsx`
 
 ### `aula17/`
-- `atividade13.ipynb`: notebook da atividade 13.
-- `explicacao_atividades.md`: explicação escrita das atividades.
-- `vinhos_exercicio.xlsx`: planilha usada em aula 17.
+- `atividade13.ipynb`
+- `explicacao_atividades.md`
+- `vinhos_exercicio.xlsx`
 
 ### `DESAFIO/`
-- `analise.ipynb`: notebook de análise de dados do desafio.
-- `documentacao_detalhada.ipynb`: documentação detalhada do projeto/desafio.
-- `visualizacoes_insights.ipynb`: visualizações e insights exploratórios.
-- `vinhos_desafio.xlsx`: dados brutos do desafio de vinho.
-- `vinhos_tratado.xlsx`: dados tratados para análise.
+- `analise.ipynb`
+- `documentacao_detalhada.ipynb`
+- `visualizacoes_insights.ipynb`
+- `vinhos_desafio.xlsx`
+- `vinhos_tratado.xlsx`
+
+### `Projeto-DataWarehouse/`
+- `csv/`
+  - `categorias.csv`
+  - `cliente.csv`
+  - `data.csv`
+  - `produtos.csv`
+  - `vendas.csv`
+- `python/`
+  - `etl.ipynb`
+- `sql/`
+  - `create_tables.sql`
+  - `insert_clientes.sql`
+  - `insert_datas.sql`
+  - `insert_fato_vendas.sql`
+  - `insert_produtos.sql`
+  - `consultas.sql`
+
+## Arquivos na raiz
+- `README.md`
+- `requirements.txt`
+- `ANALISE.pbix`
+- `Projeto_vinho.pbix`
+- `BancoDeDadosJefferson.sql`
+- `concessionaria.sql`
+
+## Observações
+- Os arquivos Jupyter Notebook (`.ipynb`) contêm análises, exercícios e explicações interativas.
+- As planilhas Excel (`.xlsx`) e CSV (`.csv`) servem como bases de dados para estudos de vinho e análise de dados.
+- Os scripts SQL no `Projeto-DataWarehouse` são usados para criar tabelas e carregar dados em um data warehouse.
 
 ### `Projeto-DataWarehouse/sql/`
 - `create_tables.sql`: scripts de criação das tabelas do data warehouse.
