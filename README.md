@@ -1,122 +1,122 @@
-# Projetos-Atividades_Python
+﻿# Projetos-Atividades_Python
 
 ## Visão geral
 
-Este repositório reúne exercícios e projetos de Python organizados por aulas, anotações e desafios de análise de dados.
-Também contém notebooks, dados em CSV/XLSX, scripts SQL e arquivos Power BI usados em atividades e projetos.
+Este repositório reúne exercícios e projetos de Python organizados por aula, além de trabalhos de análise de dados e ETL.
+O conteúdo inclui códigos Python, notebooks Jupyter, planilhas de dados, scripts SQL e relatórios Power BI.
 
-## Estrutura principal
+## Estrutura do repositório
 
-- `anotações/`: notas em Markdown e exemplos de estudo.
-- `aula01/` a `aula17/`: exercícios e estudos de Python organizados por aula.
-- `AULA09/`: exercícios de listas e altura de alunos.
-- `DESAFIO/`: desafio de análise de dados com notebooks e planilhas de vinho.
-- `Projeto-DataWarehouse/`: dados e scripts de ETL/SQL para um data warehouse.
+- `anotações/`: material de apoio e exemplos em Markdown.
+- `aula01/` a `aula17/`: exercícios de programação em Python por aula.
+- `AULA09/`: exercícios específicos de listas e altura de alunos.
+- `DESAFIO/`: projeto de análise de dados com notebooks e planilhas relacionados a vinho.
+- `Projeto-DataWarehouse/`: dados e scripts para construção de um data warehouse.
 - Arquivos SQL independentes: `BancoDeDadosJefferson.sql`, `concessionaria.sql`.
 - Relatórios Power BI: `ANALISE.pbix`, `Projeto_vinho.pbix`.
-- `requirements.txt`: dependências Python.
+- `requirements.txt`: dependências Python usadas no projeto.
 
-## Conteúdo por pasta
+## Detalhes por pasta
 
 ### `anotações/`
-- `exemplos.md`: notas e exemplos usados como material de apoio.
+- `exemplos.md`: notas em Markdown e exemplos de estudo.
 
 ### `aula01/`
-- `hello.py`: exemplo básico para imprimir texto em Python.
+- `hello.py`: programa inicial simples para exibir texto.
 
 ### `aula02/`
-- `calculadora.py`
-- `dicionario.py`
-- `estadoCivil.py`
-- `idade.py`
-- `media.py`
-- `menor.py`
-- `par-impar.py`
+- `calculadora.py`: operações aritméticas simples.
+- `dicionario.py`: uso de dicionários em Python.
+- `estadoCivil.py`: lógica para estado civil.
+- `idade.py`: cálculo e verificação de idade.
+- `media.py`: cálculo de média de valores.
+- `menor.py`: identificação do menor valor entre entradas.
+- `par-impar.py`: verificação de número par ou ímpar.
 
 ### `aula03/`
-- `vogais.py`
-- `extensao.ipynb`
+- `vogais.py`: identificação de vogais em texto.
+- `extensao.ipynb`: notebook Jupyter com conteúdo adicional da aula.
 
 ### `aula04/`
-- `and_empresa.py`
-- `and_login.py`
-- `and_or.py`
-- `or_aluno.py`
-- `or_autorizacao.py`
+- `and_empresa.py`: uso de `and` em um cenário empresarial.
+- `and_login.py`: autenticação usando `and`.
+- `and_or.py`: combinação de operadores lógicos `and` e `or`.
+- `or_aluno.py`: uso de `or` em contexto de aluno.
+- `or_autorizacao.py`: lógica de autorização com `or`.
 
 ### `aula05/`
-- `algoritmo.py`
-- `aritmetica.py`
-- `digitados.py`
-- `idades.py`
-- `senha.py`
-- `signo.py`
-- `turma.py`
-- `while.py`
-- `zero_dez.py`
+- `algoritmo.py`: algoritmo básico em Python.
+- `aritmetica.py`: operações matemáticas simples.
+- `digitados.py`: leitura e processamento de valores digitados.
+- `idades.py`: manipulação e cálculo de idades.
+- `senha.py`: validação de senha.
+- `signo.py`: cálculo de signo baseado na data de nascimento.
+- `turma.py`: lógica relacionada a uma turma de alunos.
+- `while.py`: exercício com laço `while`.
+- `zero_dez.py`: exercício com valores de 0 a 10.
 
 ### `aula06/`
-- `convite.py`
+- `convite.py`: programa de convite ou mensagem condicional.
 
 ### `aula07/`
-- `forMedia.py`
-- `forPar.py`
-- `forUm.py`
+- `forMedia.py`: cálculo de média com laço `for`.
+- `forPar.py`: loop `for` para números pares.
+- `forUm.py`: exemplo de laço `for` simples.
 
 ### `aula08/`
-- `fibonacci.py`
-- `login.py`
+- `fibonacci.py`: geração da sequência de Fibonacci.
+- `login.py`: validação de login simples.
 
 ### `AULA09/`
-- `alturaAlunos.py`
-- `listas.py`
+- `alturaAlunos.py`: análise de alturas de alunos.
+- `listas.py`: exercícios com listas em Python.
 
 ### `aula10/`
-- `posto.py`
-- `revisão.py`
-- `revisao2.py`
+- `posto.py`: lógica de decisão em posto de gasolina.
+- `revisão.py`: revisão de conceitos da aula.
+- `revisao2.py`: segundo script de revisão.
 
 ### `aula11/`
-- `exercicio.py`
+- `exercicio.py`: exercício geral da aula 11.
 
 ### `aula12/`
-- `desafio.ipynb`
-- `dicionario.ipynb`
-- `exercicios.ipynb`
-- `tuplas.ipynb`
+- `desafio.ipynb`: notebook com desafio da aula.
+- `dicionario.ipynb`: notebook sobre dicionários.
+- `exercicios.ipynb`: conjunto de exercícios práticos.
+- `tuplas.ipynb`: notebook sobre tuplas.
 
 ### `aula13/`
-- `atividades.ipynb`
-- `funcoes.ipynb`
+- `atividades.ipynb`: atividades práticas em notebook.
+- `funcoes.ipynb`: notebook sobre funções em Python.
 
 ### `aula14/`
-- `atividade.ipynb`
-- `atividade07.ipynb`
-- `atividade08.ipynb`
-- `wine.csv`
+- `atividade.ipynb`: notebook de atividade da aula.
+- `atividade07.ipynb`: atividade 07 da aula.
+- `atividade08.ipynb`: atividade 08 da aula.
+- `wine.csv`: conjunto de dados de vinho para análise.
 
 ### `aula15/`
-- `atividade.ipynb`
-- `vinhos_exercicio.xlsx`
+- `atividade.ipynb`: notebook da aula 15.
+- `vinhos_exercicio.xlsx`: planilha de dados de vinho para exercício.
 
 ### `aula16/`
-- `atividade11.ipynb`
-- `correcao.ipynb`
-- `estatistica.ipynb`
-- `vinhos.xlsx`
-- `vinhos_tratamento.xlsx`
+- `atividade11.ipynb`: notebook da aula 16.
+- `correcao.ipynb`: correção de exercícios.
+- `estatistica.ipynb`: conteúdo de estatística aplicada.
+- `vinhos.xlsx`: base de dados de vinho em Excel.
+- `vinhos_tratamento.xlsx`: dados tratados em Excel.
 
 ### `aula17/`
-- `atividade13.ipynb`
-- `explicacao_atividades.md`
-- `vinhos_exercicio.xlsx`
+- `atividade13.ipynb`: notebook da atividade 13.
+- `explicacao_atividades.md`: explicação escrita das atividades.
+- `vinhos_exercicio.xlsx`: planilha de exercício de vinho.
 
 ### `DESAFIO/`
-- `analise.ipynb`
-- `documentacao_detalhada.ipynb`
-- `visualizacoes_insights.ipynb`
-- `vinhos_desafio.xlsx`
-- `vinhos_tratado.xlsx`
+- `analise.ipynb`: notebook de análise de dados do desafio.
+- `documentacao_detalhada.ipynb`: documentação detalhada do projeto.
+- `visualizacoes_insights.ipynb`: visualizações e insights exploratórios.
+- `vinhos_desafio.xlsx`: planilha de dados brutos do desafio.
+- `vinhos_tratado.xlsx`: planilha de dados tratados do desafio.
 
 ### `Projeto-DataWarehouse/`
 - `csv/`
@@ -126,14 +126,14 @@ Também contém notebooks, dados em CSV/XLSX, scripts SQL e arquivos Power BI us
   - `produtos.csv`
   - `vendas.csv`
 - `python/`
-  - `etl.ipynb`
+  - `etl.ipynb`: notebook de ETL para carregamento de dados.
 - `sql/`
-  - `create_tables.sql`
-  - `insert_clientes.sql`
-  - `insert_datas.sql`
-  - `insert_fato_vendas.sql`
-  - `insert_produtos.sql`
-  - `consultas.sql`
+  - `create_tables.sql`: criação de tabelas do data warehouse.
+  - `insert_clientes.sql`: inserção dos dados de clientes.
+  - `insert_datas.sql`: inserção do calendário de datas.
+  - `insert_fato_vendas.sql`: inserção da tabela fato de vendas.
+  - `insert_produtos.sql`: inserção dos produtos.
+  - `consultas.sql`: consultas SQL para análise.
 
 ## Arquivos na raiz
 - `README.md`
@@ -144,24 +144,7 @@ Também contém notebooks, dados em CSV/XLSX, scripts SQL e arquivos Power BI us
 - `concessionaria.sql`
 
 ## Observações
-- Os arquivos Jupyter Notebook (`.ipynb`) contêm análises, exercícios e explicações interativas.
-- As planilhas Excel (`.xlsx`) e CSV (`.csv`) servem como bases de dados para estudos de vinho e análise de dados.
-- Os scripts SQL no `Projeto-DataWarehouse` são usados para criar tabelas e carregar dados em um data warehouse.
-
-### `Projeto-DataWarehouse/sql/`
-- `create_tables.sql`: scripts de criação das tabelas do data warehouse.
-- `insert_clientes.sql`: inserção de dados de clientes.
-- `insert_datas.sql`: inserção de dados de calendário/datas.
-- `insert_fato_vendas.sql`: inserção da tabela fato de vendas.
-- `insert_produtos.sql`: inserção de dados de produtos.
-- `consultas.sql`: consultas SQL para análise do data warehouse.
-
-## Arquivos SQL independentes
-
-- `BancoDeDadosJefferson.sql`: base de dados ou script SQL específico do projeto Jefferson.
-- `concessionaria.sql`: script SQL para base de dados de concessionária.
-
-## Observações
-
-- A pasta `venv/` contém o ambiente virtual Python usado localmente.
-- O `requirements.txt` lista dependências Python do projeto.
+- Notebooks Jupyter (`.ipynb`) trazem exercícios, análises e explicações interativas.
+- Planilhas Excel (`.xlsx`) e arquivos CSV (`.csv`) são usados como bases de dados para análise.
+- Os scripts SQL do `Projeto-DataWarehouse` são usados para criar tabelas e carregar dados.
+- O ambiente virtual local (`.venv`) não é parte do controle de versão.
