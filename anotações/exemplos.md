@@ -430,3 +430,7 @@ pip install -r requirements.txt
 
 pip install -r requirements.txt
 
+
+pip install streamlit
+pip install pandas
+pip install scikit-learn
