@@ -4,11 +4,11 @@
 # pip install -r requirements.txt
 
 # LACUNA 1: Importe 'pandas' como 'pd'
-import ... as ...
+import pandas as pd
 # LACUNA 2: Importe 'joblib'
-import ...
+import joblib
 # LACUNA 3: De 'sklearn.neighbors', importe 'KNeighborsClassifier'
-from ... import ...
+from sklearn.neighbors import KNeighborsClassifier
 import io
 
 # -------------------------------------------------------------------
@@ -30,15 +30,15 @@ import io
 # IMPORTANTE: Cole a URL pública do seu Google Sheet CSV aqui
 # -------------------------------------------------------------------
 # LACUNA 4: Cole a URL pública do seu Google Sheet CSV
-URL_DADOS = "COLE_A_URL_AQUI"
+URL_DADOS = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSiGX8co0hgwOm7obE-qVPoBxMDTJ2WaCNQcEuIuHqYeJ9i0uSR2W-29Mdb5G93nkP1-5DS1lfikJfw/pub?output=csv"
 
-NOME_ARQUIVO_MODELO = 'Com lacunas\modelo_desempenho.pkl'
+NOME_ARQUIVO_MODELO = 'Com lacunas/modelo_desempenho.pkl'
 
 def treinar_modelo():
     print(f"Baixando dados de {URL_DADOS}...")
     
     # LACUNA 5: Use 'pd.read_csv()' para ler a 'URL_DADOS'
-    data = pd.read_csv(...)
+    data = pd.read_csv(URL_DADOS)
     
     print("--- Dados Carregados ---")
     print(data.head())
@@ -51,17 +51,17 @@ def treinar_modelo():
     Y = data[target]
 
     # LACUNA 6: Instancie o 'KNeighborsClassifier' com 3 vizinhos (n_neighbors=3)
-    modelo = ...(...)
+    modelo = KNeighborsClassifier(n_neighbors=3)
 
     # LACUNA 7: Treine o 'modelo' usando o método '.fit()'
     # Dica: Passe as entradas (X) e as saídas (Y)
-    modelo.fit(..., ...)
+    modelo.fit(X, Y)
 
     print(f"--- Modelo Treinado! Classes: {modelo.classes_} ---")
 
     # LACUNA 8: Use 'joblib.dump()' para salvar o 'modelo'
     # Dica: Salve no arquivo 'NOME_ARQUIVO_MODELO'
-    joblib.dump(..., ...)
+    joblib.dump(modelo, NOME_ARQUIVO_MODELO)
     
     print(f"--- Modelo salvo com sucesso em '{NOME_ARQUIVO_MODELO}' ---")
 

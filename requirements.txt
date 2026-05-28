@@ -4,3 +4,6 @@ openpyxl>=3.0.0
 matplotlib>=3.7.0
 jupyter>=1.0.0
 ipython>=8.0.0
+joblib
+scikit-learn
+streamlit
