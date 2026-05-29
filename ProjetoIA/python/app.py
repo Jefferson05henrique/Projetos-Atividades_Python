@@ -1,13 +1,18 @@
 # LACUNA 1: Importe 'streamlit' com o apelido 'st'
-import ... as ...
+import streamlit as st
 # LACUNA 2: Importe 'joblib' para carregar o modelo
-import ...
+import joblib
 # LACUNA 3: Importe 'pandas' como 'pd' (para formatar os dados de entrada)
-import ... as ...
-import os # (Já vem pronto, para verificar se o arquivo existe)
+import pandas as pd
+import os
 
-# Nome do arquivo do modelo (deve ser o mesmo salvo pelo train.py)
-NOME_ARQUIVO_MODELO = 'modelo_desempenho.pkl'
+BASE_DIR = os.path.dirname(__file__)
+
+NOME_ARQUIVO_MODELO = os.path.join(
+    BASE_DIR,
+    'Com lacunas',
+    'modelo_desempenho.pkl'
+)
 
 @st.cache_resource # Cache para carregar o modelo apenas uma vez
 def carregar_modelo(caminho_modelo):
@@ -34,7 +39,7 @@ def main():
     
     # --- Título e Subtítulo ---
     # LACUNA 4: Dê um título ao seu App usando 'st.title()'
-    st.title('...')
+    st.title('Passou ou Reprovou? hahaha')
     st.subheader('Estudo de Caso da Imersão em IA (Aulas 1-3)')
 
     # Se o modelo não existir, exibe um aviso (pronto)
@@ -50,14 +55,39 @@ def main():
 
     # LACUNA 6: Crie um 'st.sidebar.slider' para 'Horas de Estudo'
     # (Nome: 'Média de Horas de Estudo/semana', min: 0, max: 20, padrão: 5)
-    horas_estudo = st.sidebar.slider('...', 0, 20, 5)
+    horas_estudo = st.sidebar.slider('Média de Horas de Estudo/semana', 0, 20, 5)
 
     # LACUNA 7: Crie um 'st.sidebar.number_input' para 'Faltas'
     # (Nome: 'Número Total de Faltas', min: 0, max: 50, padrão: 3)
-    faltas = st.sidebar.number_input('...', min_value=0, max_value=50, value=3)
+    faltas = st.sidebar.number_input('Número Total de Faltas', min_value=0, max_value=50, value=3)
 
     # (Este vem pronto)
     nota_p1 = st.sidebar.number_input('Nota da Primeira Prova (0-10)', min_value=0.0, max_value=10.0, value=5.0, step=0.5)
+
+        # --- Botão para prever ---
+    if st.sidebar.button("Prever Resultado"):
+
+        # Criando DataFrame com os dados do usuário
+        dados_aluno = pd.DataFrame({
+            'horas_estudo': [horas_estudo],
+            'faltas': [faltas],
+            'nota_p1': [nota_p1]
+        })
+
+        # Fazendo previsão
+        previsao = modelo.predict(dados_aluno)
+
+        # Mostrando resultado
+        st.subheader("Resultado da Previsão")
+
+        if previsao[0] == "Aprovado":
+            st.success("🎉 O aluno provavelmente será APROVADO!")
+        else:
+            st.error("💀 O aluno provavelmente será REPROVADO!")
+
+        # Mostrar dados usados
+        st.write("Dados analisados:")
+        st.dataframe(dados_aluno)
 
     st.markdown("---")
     st.write("Este App foi construído no curso de Programação em IA Generativa.")
