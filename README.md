@@ -2,113 +2,136 @@
 
 ## Visão geral
 
-Este repositório reúne exercícios e projetos de Python estruturados por aulas, com foco em lógica de programação, análise de dados e ETL.
+Repositório de estudos e exercícios em Python organizado por aulas, desafios e projetos de dados.
 
-Ele contém:
-- scripts Python para estudos de algoritmos, condicionais, laços e funções;
-- notebooks Jupyter para exercícios interativos, desafios e análises;
-- bases de dados em `.csv` e `.xlsx` para exercícios de análise;
-- scripts SQL para criação e carregamento de dados em um projeto de Data Warehouse;
-- relatórios Power BI para visualização de dashboards.
+Inclui:
+- scripts Python para lógica, condicionais, laços, funções e estruturas de dados;
+- notebooks Jupyter para estudo interativo, visualização e análise de dados;
+- bases de dados em `.csv` e `.xlsx` para análises e treinamentos;
+- scripts SQL para criação, inserção e consulta de dados em projetos de data warehouse;
+- projetos de machine learning e aplicação web com Streamlit.
 
 ## Estrutura do repositório
 
-- `anotações/`: material de apoio em Markdown.
+- `anotações/`: material de apoio e exemplos em Markdown.
 - `arquivosUnicos/`: relatórios Power BI e scripts SQL independentes.
-- `aula01/` a `aula17/`: exercícios de Python por aula.
-- `aula09/`: atividades específicas com listas e análise de alturas.
-- `DESAFIO/`: projeto de análise de dados em notebooks.
-- `Projeto-DataWarehouse/`: projeto de data warehouse com dados, ETL e SQL.
-- `requirements.txt`: dependências Python usadas no projeto.
+- `aula01/` a `aula17/`: exercícios de Python organizados por aula.
+- `DESAFIO/`: projeto de análise de dados com notebooks e arquivos de apoio.
+- `Projeto-DataWarehouse/`: modelo de dados, ETL e SQL para um pequeno data warehouse.
+- `ProjetoIA/`: aplicação de machine learning com app Streamlit e script de treinamento.
+- `requirements.txt`: dependências Python usadas no repositório.
 
-## Conteúdo por seção
+## Conteúdo das pastas
 
 ### `anotações/`
-- `exemplos.md`: notas e exemplos de estudo.
+- `exemplos.md`: notas de apoio e exemplos comentados.
 
 ### `arquivosUnicos/`
-- `ANALISE.pbix` e `Projeto_vinho.pbix`: relatórios Power BI.
+- `ANALISE.pbix` e `Projeto_vinho.pbix`: relatórios Power BI prontos.
 - `BancoDeDadosJefferson.sql` e `concessionaria.sql`: scripts SQL avulsos.
 
 ### `aula01/`
-- `hello.py`: primeiro programa em Python com saída de texto.
+- `hello.py`: programa inicial em Python.
 
 ### `aula02/`
-- Exercícios básicos de operações, uso de dicionários, cálculo de idade, média, menor valor e verificação par/ímpar.
+- Exercícios básicos de leitura, operações matemáticas, dicionários, cálculo de idade, média, menor valor e identificação par/ímpar.
 
 ### `aula03/`
-- `vogais.py`: detecção de vogais em um texto.
-- `extensao.ipynb`: notebook de conteúdo extra.
+- `vogais.py`: identificação de vogais em texto.
+- `extensao.ipynb`: conteúdo extra em notebook.
 
 ### `aula04/`
-- Exercícios com operadores lógicos `and` e `or` aplicados a login, autorização e cenários empresariais.
+- Exercícios com operadores lógicos `and` e `or` para autenticação, autorização e regras de negócio.
 
 ### `aula05/`
-- Exercícios de algoritmo, aritmética, leitura de dados, validação de senha, cálculo de signo, manipulação de turmas e `while`.
+- Exercícios sobre algoritmos, aritmética, entrada de dados, validação de senha, cálculo de signo, manipulação de turmas e loop `while`.
 
 ### `aula06/`
-- `convite.py`: exemplo de lógica condicional para convite.
+- `convite.py`: lógica condicional para controle de convites.
 
 ### `aula07/`
 - `forMedia.py`, `forPar.py` e `forUm.py`: exemplos de laços `for`.
 
 ### `aula08/`
-- `fibonacci.py`: sequência de Fibonacci.
-- `login.py`: validação de login.
+- `fibonacci.py`: implementação da sequência de Fibonacci.
+- `login.py`: validação de login simples.
 
 ### `aula09/`
 - `alturaAlunos.py`: análise de alturas de alunos.
-- `listas.py`: exercícios de listas.
+- `listas.py`: exercícios com listas.
 
 ### `aula10/`
-- `posto.py`: decisão de posto de gasolina.
-- `revisão.py` e `revisao2.py`: revisão de conceitos.
+- `posto.py`: tomada de decisão para posto de combustível.
+- `revisão.py` e `revisao2.py`: revisão de estruturas e lógica.
 
 ### `aula11/`
-- `exercicio.py`: atividade geral da aula.
+- `exercicio.py`: atividade de programação.
 
 ### `aula12/`
-- Notebooks sobre dicionários, tuplas e desafio prático.
+- Notebooks focados em dicionários, tuplas e desafios práticos.
 
 ### `aula13/`
 - Notebooks de atividades e funções.
 
 ### `aula14/`
-- Atividades em notebook e o dataset `wine.csv`.
+- Notebooks de atividades e o dataset `wine.csv`.
 
 ### `aula15/`
 - Atividades em notebook e `vinhos_exercicio.xlsx`.
 
 ### `aula16/`
-- Notebooks de estatística, correção e análise de vinho (`vinhos.xlsx`, `vinhos_tratamento.xlsx`).
+- Notebooks de estatística, correção e análise de vinho.
 
 ### `aula17/`
-- Notebook de atividade e explicação em Markdown.
+- Notebook de atividade e `explicacao_atividades.md`.
 
 ### `DESAFIO/`
-- Notebooks de análise e visualizações.
-- Planilhas `vinhos_desafio.xlsx` e `vinhos_tratado.xlsx`.
+- Notebooks de análise e visualização: `analise.ipynb`, `visualizacoes_insights.ipynb`, `documentacao_detalhada.ipynb`.
+- Bases de dados: `vinhos_desafio.xlsx`, `vinhos_tratado.xlsx`.
 
 ### `Projeto-DataWarehouse/`
-- `csv/`: bases de dados de categorias, clientes, datas, produtos e vendas.
-- `python/`: notebook `etl.ipynb` com fluxo de ETL.
-- `readme/`: explicação do projeto de data warehouse.
-- `sql/`: scripts de criação de tabelas, inserção de dados e consultas.
+- `csv/`: dados de `categorias.csv`, `cliente.csv`, `data.csv`, `produtos.csv` e `vendas.csv`.
+- `python/etl.ipynb`: notebook com pipeline de ETL.
+- `readme/explicação.md`: documentação do projeto.
+- `sql/`: scripts de criação de tabelas, inserção e consulta de dados.
+
+### `ProjetoIA/`
+- `python/app.py`: aplicativo Streamlit para previsão de desempenho.
+- `python/train.py`: script de treinamento de modelo com `KNeighborsClassifier`.
+- `python/Com lacunas/modelo_desempenho.pkl`: modelo treinado salvado em pickle.
+
+## Como usar
+
+1. Ative o ambiente virtual local no diretório do projeto.
+2. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Abra notebooks para estudo nas pastas `aula12/`, `aula13/`, `aula14/`, `aula15/`, `aula16/` e `DESAFIO/`.
+4. Execute o projeto de ETL em `Projeto-DataWarehouse/python/etl.ipynb`.
+5. Execute o app Streamlit do `ProjetoIA` com:
+   ```bash
+   streamlit run ProjetoIA/python/app.py
+   ```
 
 ## Dependências
 
-O arquivo `requirements.txt` define as bibliotecas Python utilizadas:
-
+O arquivo `requirements.txt` inclui:
 - `pandas>=2.0.0`
 - `numpy>=1.24.0`
-- `openpyxl>=3.0.0`
+- `openpyxl>=3.1.0`
 - `matplotlib>=3.7.0`
 - `jupyter>=1.0.0`
 - `ipython>=8.0.0`
+- `joblib>=1.5.0`
+- `scikit-learn>=1.8.0`
+- `streamlit>=1.58.0`
+- `PyMySQL>=1.2.0`
+- `SQLAlchemy>=2.0.0`
 
 ## Observações
 
-- Os notebooks `.ipynb` permitem estudo interativo e análise de dados.
-- As bases de dados em `.csv` e `.xlsx` suportam exercícios e projetos de análise.
-- Os scripts SQL do `Projeto-DataWarehouse` modelam e carregam um pequeno data warehouse.
 - A pasta `.venv/` é o ambiente virtual local e não deve ser versionada.
+- Os notebooks `.ipynb` são usados para análise e aprendizado interativo.
+- Os arquivos `.csv`, `.xlsx` e os scripts SQL suportam estudo prático de dados.
+- O `ProjetoIA` une aplicação web e machine learning; o `Projeto-DataWarehouse` foca em ETL e modelagem de dados.
