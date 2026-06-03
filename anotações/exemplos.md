@@ -434,3 +434,6 @@ pip install -r requirements.txt
 pip install streamlit
 pip install pandas
 pip install scikit-learn
+
+COMANDO DE INICIALIZAÇÃO DO STREAMLIT:
+streamlit run endereço do arquivo
