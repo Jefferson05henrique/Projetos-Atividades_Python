@@ -1,34 +1,19 @@
-from ultralytics import YOLO  # Modelo YOLO
-import cv2  # Processamento de imagem e vídeo
+import cv2
 
+camera = cv2.VideoCapture(0) # Inicia a captura de vídeo da câmera (0 é geralmente a webcam padrão)
 
-def main():
-    print("--- Carregando modelo ---")
-    modelo = YOLO("yolov8n.pt")
+while True: # Loop para capturar e exibir os frames da câmera continuamente
 
-    # vídeo em tempo real
-    captura = cv2.VideoCapture(0)
+    sucesso, frame = camera.read() # Captura um frame da câmera. 'sucesso' indica se a captura foi bem-sucedida e 'frame' contém a imagem capturada.
 
-    if not captura.isOpened():
-        print("Erro ao abrir a câmera.")
-        return
+    if not sucesso: 
+        break
 
-    while captura.isOpened():
-        sucesso, frame = captura.read()
+    cv2.imshow("Camera", frame) # Exibe o frame capturado em uma janela chamada "Camera"
 
-        if not sucesso:
-            break
+    if cv2.waitKey(1) == ord("q"): # Aguarda por 1 milissegundo e verifica se a tecla 'q' foi pressionada para sair do loop
+        break
 
-        # Realiza a detecção
-        resultados = modelo(frame, stream=True)
+camera.release() 
 
-        for r in resultados:
-            frame_anotado = r.plot()
-            cv2.imshow("Detecção YOLO", frame_anotado)
-
-        # Sai tecla q
-        if cv2.waitKey(1) & 0xFF == ord("q"):
-            break
-
-    captura.release()
-    cv2.destroyAllWindows()
+cv2.destroyAllWindows() 

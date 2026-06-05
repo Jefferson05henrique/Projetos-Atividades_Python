@@ -1,21 +1,14 @@
-from ultralytics import YOLO #ver a imgagem
-import cv2 #se preocupa com a imagem 
+import cv2
 
+camera = cv2.VideoCapture(0)
 
-def main():
-    print("---carregando modelo--- ")
-    modelo =YOLO("yolov8n.pt")
-    
-    #adicionando uma imagem online para análise
-    url_imagem ="https://arkpad.com.br/wp-content/uploads/2020/07/casas-pequenas-1.jpg"
-    
-    print("----Realizando a inferencia na imagem ----")
-    resultado = modelo(url_imagem,show=True)#mostrar resultado
-    
-    #Fecha as janela aberta
+sucesso, frame = camera.read()
+
+if sucesso:
+    cv2.imshow("Camera", frame)
+
     cv2.waitKey(0)
-    cv2.destroyAllWindows()
-    
-    
-if __name__=="__main__":
-    main()
+
+camera.release()
+
+cv2.destroyAllWindows()

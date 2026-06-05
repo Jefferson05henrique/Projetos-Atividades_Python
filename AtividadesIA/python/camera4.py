@@ -9,27 +9,23 @@ while True:
     if not sucesso:
         break
 
-    cv2.putText( # Adiciona o texto "JEFIN" na posição (100, 100) do frame, usando a fonte Hershey Simplex, com tamanho 1, cor vermelha (0, 0, 255) e espessura 2
+    cv2.putText(
     frame,
     "JEFIN",
-    (100,100),
+    (150,150),
     cv2.FONT_HERSHEY_SIMPLEX,
     1,
     (0,0,255),
     2
     )
 
-    """
-    cv2.putText(
-    quadro,
-    mensagem,
-    posição,
-    fonte,
-    tamanho,
-    cor,
-    espessura
+    cv2.rectangle( # Desenha um retângulo vermelho no frame, com o canto superior esquerdo em (100, 100) e o canto inferior direito em (300, 300), com espessura de 2 
+    frame,
+    (100,100),
+    (300,300),
+    (0,0,255),
+    2
     )
-    """
 
     cv2.imshow("Camera", frame)
 
