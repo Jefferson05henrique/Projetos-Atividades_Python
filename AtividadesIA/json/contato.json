@@ -1,0 +1,66 @@
+{
+  "metadados": {
+    "descricao": "Lista de contatos convertida de TXT para JSON usando Few-Shot",
+    "total_registros": 5,
+    "campos": ["nome", "ddd", "telefone", "email", "status_registro"]
+  },
+  "exemplos_few_shot": [
+    {
+      "entrada_txt": "jefin 11 99999-9999 jefin123@gmail.com",
+      "saida_json_esperada": {
+        "nome": "jefin",
+        "ddd": "11",
+        "telefone": "99999-9999",
+        "email": "jefin123@gmail.com",
+        "status_registro": "completo"
+      }
+    },
+    {
+      "entrada_txt": "joelinton 77777-7777 joelinton123@gmail.com",
+      "saida_json_esperada": {
+        "nome": "joelinton",
+        "ddd": null,
+        "telefone": "77777-7777",
+        "email": "joelinton123@gmail.com",
+        "status_registro": "sem_ddd"
+      }
+    }
+  ],
+  "dados_convertidos": [
+    {
+      "nome": "jefin",
+      "ddd": "11",
+      "telefone": "99999-9999",
+      "email": "jefin123@gmail.com",
+      "status_registro": "completo"
+    },
+    {
+      "nome": "jairo",
+      "ddd": "13",
+      "telefone": "88888-8888",
+      "email": "jairo123@gmail.com",
+      "status_registro": "completo"
+    },
+    {
+      "nome": "joelinton",
+      "ddd": null,
+      "telefone": "77777-7777",
+      "email": "joelinton123@gmail.com",
+      "status_registro": "sem_ddd"
+    },
+    {
+      "nome": "josue",
+      "ddd": null,
+      "telefone": "66666-6666",
+      "email": "josue123@gmail.com",
+      "status_registro": "sem_ddd"
+    },
+    {
+      "nome": "joao",
+      "ddd": null,
+      "telefone": "55555-5555",
+      "email": "joao123@gmail.com",
+      "status_registro": "sem_ddd"
+    }
+  ]
+}
